@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:text="欢迎使用\n农业数据采集系统"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="Welcome to Agricultural Data Acquisition System"
+        android:textColor="#D3D3D3"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/imageData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/btn_shape"
+        android:foreground="?selectableItemBackground"
+        android:paddingHorizontal="30dp"
+        android:text="图像数据收集"
+        android:textColor="#EBEDDF"
+        android:textSize="24sp" />
+
+    <android.widget.Button
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_shape"
+        android:foreground="?selectableItemBackground"
+        android:paddingHorizontal="30dp"
+        android:text="性状数据录入"
+        android:textColor="#EBEDDF"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

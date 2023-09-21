@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fadeScrollbars="false">
+<LinearLayout
+    android:id="@+id/textLayout"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="top"
+        android:background="@drawable/banner">
+
+        <TextView
+            android:id="@+id/txt_file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="70dp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic"
+            android:text="example.xlsx" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/txt_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文件名称"
+                android:textColor="#000"
+                android:paddingHorizontal="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:foreground="?selectableItemBackground"
+                android:background="@drawable/btn_dir"/>
+            <android.widget.Button
+                android:id="@+id/txt_excel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="文件查看"
+                android:paddingHorizontal="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:foreground="?selectableItemBackground"
+                android:background="@drawable/btn_dir"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/iconText_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:text="@string/plants_id"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ID:"
+            android:textColor="#000"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/only_id"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:hint="请输入唯一id"/>
+    </LinearLayout>
+
+
+    <android.widget.Button
+        android:id="@+id/add_properties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="添加性状"
+        android:textColor="#000"
+        android:backgroundTint="#E3EDCD" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.widget.Button
+            android:id="@+id/txt_query"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="个体查询"
+            android:textColor="#000"
+            android:backgroundTint="#CDEADC"/>
+        <android.widget.Button
+            android:id="@+id/txt_dataSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000"
+            android:text="数据总量"
+            android:backgroundTint="#CDEADC"/>
+        <android.widget.Button
+            android:id="@+id/txt_del_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="个体删除"
+            android:textColor="#000"
+            android:backgroundTint="#FDE6E0"/>
+    </LinearLayout>
+    <android.widget.Button
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="3dp"
+        android:paddingHorizontal="25dp"
+        android:text="数据采集完毕，提交"
+        android:textColor="#000"
+        android:foreground="?selectableItemBackground"
+        android:background="@drawable/btn_submit"/>
+<!--    https://blog.csdn.net/chen_md/article/details/120038515-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/iconText_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:text="@string/plants_flag"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"
+            android:text="已添加的性状如下："
+            android:textSize="20dp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

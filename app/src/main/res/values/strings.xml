@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GraduationDesign</string>
+
+    <string name="plants_id">&#xe600;</string>
+    <string name="plants_flag">&#xe63f;</string>
+
+</resources>
